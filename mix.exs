@@ -1,8 +1,8 @@
-defmodule NervesSystemRpi0.MixProject do
+defmodule BusBeaconRpi0.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
-  @app :nerves_system_rpi0
+  @github_organization "minifast"
+  @app :bus_beacon_rpi0
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -67,7 +67,7 @@ defmodule NervesSystemRpi0.MixProject do
   defp deps do
     [
       {:nerves, "~> 1.6.0 or ~> 1.7.15 or ~> 1.8", runtime: false},
-      {:nerves_system_br, "1.22.2", runtime: false},
+      {:nerves_system_br, "1.22.3", runtime: false},
       {:nerves_toolchain_armv6_nerves_linux_gnueabihf, "~> 1.8.0", runtime: false},
       {:nerves_system_linter, "~> 0.4", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.22", only: :docs, runtime: false}
